@@ -10,3 +10,7 @@ To compile css file use:
 ```
 gulp stylus
 ```
+To watch pug and stylus files use: 
+```
+gulp watch
+```
