@@ -1,0 +1,150 @@
+html
+  include ../partials/head
+    title About
+  body
+    header.main-header
+      .mask
+        img.banner-img(src='source/static/img/banner-about.png', alt='banner-image') 
+      include ../partials/header
+
+    .main-content
+      .container
+        .row-fluid
+          .page-name
+            p.xl-title.text-uppercase About us
+            p.sub-title Our short story
+        .row-fluid
+          .post-content
+            p.text-justify
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              | It has survived not only five centuries,but also the leap into electronic typesetting,
+              | remaining essentially unchanged. It was popularised..
+          .post-image
+            img(src='source/static/img/picture-4.png', alt='image')
+            .about-buttons.hidden-xs
+              a.btn.btn-orange.text-uppercase(href='#') Let's talk
+              a.btn.btn-orange.text-uppercase(href='#') Clients
+          .about-buttons-xs.hidden.visible-xs
+            a.btn.btn-orange.text-uppercase.mt-2.btn-xs.pull-left(href='#') Let's talk
+            a.btn.btn-orange.text-uppercase.mt-2.btn-xs.pull-left(href='#') Clients
+      .our-views.grey-section
+        .container
+          .row-fluid
+            .page-name
+              p.xl-title.text-uppercase Our views
+              p.sub-title Our concepts
+          .row
+            .our-mission
+              .mission-img
+                img(src='source/static/img/our-views-1.png', alt='')
+              .mission-desc
+                p.md-title.text-uppercase Our mission
+                p.text-justify
+                  | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                  | took a galley of type and scrambled it to make a type specimen book.
+                  | It has survived not only five centuries,but also
+                  | the leap into electronic typesetting, remaining essentially unchanged. It was popularised..
+          .row
+            .our-vision
+              .vision-img.pull-right
+                img(src='source/static/img/our-views-2.png', alt='')
+              .vision-desc.pull-left
+                p.md-title.text-uppercase Our vision
+                p
+                  | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                  | took a galley of type and scrambled it to make a type specimen book.
+                  | It has survived not only five centuries,but also
+                  | the leap into electronic typesetting, remaining essentially unchanged. It was popularised..
+      .our-clients.triangles-left
+        .container
+          .row-fluid
+            .page-name
+              p.xl-title.text-uppercase Clients
+              p.sub-title Our great clients
+          .row-fluid
+            #carousel.carousel.slide(data-ride='carousel')
+              .carousel-inner(role='listbox')
+                ul.client-list.list-inline.item.active
+                  li
+                    img(src='source/static/img/client-1.png', alt='')
+                  li
+                    img(src='source/static/img/client-2.png', alt='')
+                  li
+                    img(src='source/static/img/client-3.png', alt='')
+                  li
+                    img(src='source/static/img/client-4.png', alt='')
+                  li
+                    img(src='source/static/img/client-5.png', alt='')
+                  li
+                    img(src='source/static/img/client-6.png', alt='')
+                  li
+                    img(src='source/static/img/client-7.png', alt='')
+                  li
+                    img(src='source/static/img/client-8.png', alt='')
+                  li
+                    img(src='source/static/img/client-9.png', alt='')
+                  li
+                    img(src='source/static/img/client-10.png', alt='')
+                  li
+                    img(src='source/static/img/client-11.png', alt='')
+                  li
+                    img(src='source/static/img/client-12.png', alt='')
+                ul.client-list.list-inline.item
+                  li
+                    img(src='source/static/img/client-1.png', alt='')
+                  li
+                    img(src='source/static/img/client-2.png', alt='')
+                  li
+                    img(src='source/static/img/client-3.png', alt='')
+                  li
+                    img(src='source/static/img/client-4.png', alt='')
+                  li
+                    img(src='source/static/img/client-5.png', alt='')
+                  li
+                    img(src='source/static/img/client-6.png', alt='')
+                  li
+                    img(src='source/static/img/client-7.png', alt='')
+                  li
+                    img(src='source/static/img/client-8.png', alt='')
+                  li
+                    img(src='source/static/img/client-9.png', alt='')
+                  li
+                    img(src='source/static/img/client-10.png', alt='')
+                  li
+                    img(src='source/static/img/client-11.png', alt='')
+                  li
+                    img(src='source/static/img/client-12.png', alt='')
+                ul.client-list.list-inline.item
+                  li
+                    img(src='source/static/img/client-1.png', alt='')
+                  li
+                    img(src='source/static/img/client-2.png', alt='')
+                  li
+                    img(src='source/static/img/client-3.png', alt='')
+                  li
+                    img(src='source/static/img/client-4.png', alt='')
+                  li
+                    img(src='source/static/img/client-5.png', alt='')
+                  li
+                    img(src='source/static/img/client-6.png', alt='')
+                  li
+                    img(src='source/static/img/client-7.png', alt='')
+                  li
+                    img(src='source/static/img/client-8.png', alt='')
+                  li
+                    img(src='source/static/img/client-9.png', alt='')
+                  li
+                    img(src='source/static/img/client-10.png', alt='')
+                  li
+                    img(src='source/static/img/client-11.png', alt='')
+                  li
+                    img(src='source/static/img/client-12.png', alt='')
+              ul.carousel-indicators.mt-3.list-inline
+                li.rounded-indicator.active(data-target='#carousel', data-slide-to='0')
+                li.rounded-indicator(data-target='#carousel', data-slide-to='1')
+                li.rounded-indicator(data-target='#carousel', data-slide-to='2')
+
+    include ../partials/footer
+    include ../partials/scripts

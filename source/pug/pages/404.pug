@@ -1,0 +1,18 @@
+html
+  include ../partials/head
+    title 404
+  body
+    header.main-header
+      .mask
+        img.banner-img(src='source/static/img/banner-404.png', alt='banner-image') 
+      include ../partials/header
+    .main-content
+      .container
+        .row-fluid
+          .page-error.text-uppercase.text-center
+            p
+              | error 
+              span 404
+            p Not foud
+            span.error-desc.text-justify You may have mis-typed the URL Or the page has been removed
+    include ../partials/footer

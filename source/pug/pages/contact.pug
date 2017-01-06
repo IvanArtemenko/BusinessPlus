@@ -1,0 +1,42 @@
+html
+  include ../partials/head
+    title Contacts
+  body
+    header.main-header
+      .mask
+        img.banner-img(src='source/static/img/banner-contact.png', alt='banner-image') 
+      include ../partials/header
+    .main-content
+      .container
+        .row-fluid
+          .page-name
+            p.xl-title.text-uppercase Get in touch
+            p.sub-title Feel free to contact us
+        .row-fluid
+          .contact-phone.pull-left.mt-3
+            a.btn-phone.no-padding.text-black(href='tel:9978 8856 999') +9978 8856 999
+          a.btn.btn-mail.btn-xs.mt-2.pull-right.text-uppercase(href='mailto:info@businessplus.com')
+            | info@businessplus.com
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            .post-image.mt-3.frame-container
+              iframe.frame-responsive(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.5207681910188!2d-97.06249008475078!3d49.88902563553953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea70b254b3b39f%3A0xc70b572e79606c58!2zMTAwIE1pc3Npb24gU3QsIFdpbm5pcGVnLCBNQiBSMkogNEIzLCDQmtCw0L3QsNC00LA!5e0!3m2!1suk!2sua!4v1480596626718', height='345', frameborder='0', allowfullscreen='')
+      .contact-form.grey-section
+        .container
+          .row-fluid
+            .page-name
+              p.xl-title.text-uppercase Contact form
+              p.sub-title Fill your requirments now
+          .row-fluid
+            form(action='')
+              input.input-block(placeholder='Name', type='text')
+              input.input-block(placeholder='Email adress', type='email')
+              input.input-block(placeholder='Phone number', type='tel')
+              select.input-block
+                option Service
+                option Something
+                option Something
+              textarea.input-block(placeholder='Comment', rows='6')
+              button.btn.btn-orange.btn-xs.mt-3.text-uppercase(type='submit') submit now
+
+    include ../partials/footer

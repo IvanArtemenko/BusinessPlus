@@ -1,0 +1,69 @@
+.sm-title
+  font 13px $RWExtraBold
+
+.md-title
+  font 18px $RWExtraBold
+
+.lg-title
+  font 24px $RWExtraBold
+
+.xl-title
+  margin: 0
+  font 30px $RWExtraBold
+  & + .sub-title
+    font 14px $LoraItalic
+
+
+.text-orange
+  active-button($accent-color)
+
+.text-black
+  active-button(black)
+
+.text-white
+  active-button(white)
+
+.text-gray
+  active-button($dark-grey)
+
+.blockquote, .blockquote-reverse, .blockquote-blue, .blockquote-blue-reverse
+  margin-bottom 10px
+  font-size 16px
+  font-family $LoraItalic
+  border-left-color $accent-color
+  border-right-color $accent-color
+  background-color $pink-color
+  +media($screen-xs-min)
+    margin-left 0!important
+    margin-right 0!important
+
+.blockquote-blue-reverse
+  @extend .blockquote-reverse
+
+.blockquote-blue
+.blockquote-blue-reverse
+  background-color #d1ebff
+  border-left-color $blue-color
+  border-right-color $blue-color
+
+.quotes-dark
+  quote($dark-color)
+
+.quotes-blue
+  quote($blue-color)
+
+.quotes-orange
+  quote($accent-color)
+
+.text-quote
+  &::before
+    font-family "FontAwesome"
+    content '\f10d'
+    padding-right 5px
+    font-size 18px    
+  &::after
+    font-family "FontAwesome"
+    content '\f10e'
+    padding-left 5px
+    font-size 18px
+

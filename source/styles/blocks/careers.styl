@@ -1,0 +1,75 @@
+.upper-img
+  margin-top 70px
+  +media($screen-md-max)
+    margin-top 100px
+  +media($screen-xs-max)
+    display none
+
+.lower-img
+  position absolute
+  top 120px
+  left 130px
+  z-index -10
+  +media($screen-xs-min)
+    display none
+
+.our-offers
+  padding-bottom 50px
+
+.offers-list
+  li
+    margin-bottom 50px
+    cols(6, 6, 6, 12)
+    .offer-desc
+      cols(10, 10, 10, 10)
+      & > p
+        padding-left 30px
+      & > a
+        display block
+        margin-left 30px
+    a
+      color $dark-color
+      transition 0.2s ease
+      &:hover
+        color $blue-color
+    img
+      float left
+      width 42px
+
+.open-positions
+  padding-bottom 100px
+
+.vacancies-item
+  cols(12, 12, 12, 12)
+  padding 30px 0 20px 0
+  border-bottom 1px solid $light-grey
+  .btn-arrow
+    square-button(5px 8px, $accent-color, $blue-color)
+    font 16px $RWExtraBold
+    border-radius 50%
+  .vacancy-name
+    margin-top 7px
+    +media($screen-xs-min)
+      width 200px
+      font-size 14px
+  .vacancy-hidden
+    cols(12, 12, 12, 12)
+    margin-top 15px
+    ul
+      overflow hidden
+      li
+        cols(6, 6, 12, 12)
+        +media($screen-sm-max)
+          margin-bottom 10px
+        .vacancy-title
+            text-transform uppercase
+            cols(3, 3, 3, 12)
+            font 15px $RWBold
+        .vacancy-desc
+          cols(9, 9, 9, 12)
+          ul
+            padding 0
+          & > ul
+            li
+              width 100%
+              padding 0

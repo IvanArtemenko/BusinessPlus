@@ -1,0 +1,34 @@
+.service
+  margin-top 0
+  padding-top 100px
+  padding-bottom 100px
+.service-img
+  cols(3, 3, 4, 12)
+  img
+    width 150px
+
+.service-desc
+  cols(9, 9, 8, 12)
+  +media($screen-xs-max)
+    margin-top 20px
+
+.service-right
+  .service-img
+    float right !important
+    img
+      float right
+  .service-desc
+    p
+      text-align right !important
+    .btn-orange
+      float right
+  +media($screen-xs-max)
+    .service-img
+      float left !important
+      img
+        float left
+    .service-desc
+      p
+        text-align left !important
+      .btn-orange
+        float left

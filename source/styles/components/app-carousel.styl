@@ -1,0 +1,34 @@
+.carousel-indicators
+  position relative
+  width 100%
+  padding 0
+  margin-left 0
+  bottom 0
+  left 0
+  li
+    margin 0
+    border none
+    background-color none
+    &.active
+      background-color $accent-color !important
+
+.rounded-indicator
+  float left
+  margin-right 10px !important
+  width 14px  !important
+  height 14px !important
+  transition 0.2s ease
+  border none
+  background-color $blue-color
+  +media($screen-xs-max)
+    float none
+    margin 0 10px 0 10px !important
+
+.rectangular-indicator
+  margin 0 5px 0 5px !important
+  width 25px !important
+  height 4px !important
+  border none
+  border-radius 0 !important
+  transition 0.2s ease
+  background-color $text-muted

@@ -1,0 +1,78 @@
+.main-footer
+  position relative
+  padding-bottom 40px
+  background-color $dark-color
+  .footer-logo
+    margin-top 100px
+    cols(4, 4, 4, 8)
+    +media($screen-xs-min)
+      margin-top 50px
+    p
+      padding-top 10px
+    .footer-social
+      margin 0
+      li
+        padding 0
+        margin-right 3px
+      a
+        square-button(3px 3px, $text-muted, $accent-color)
+        display block
+        width 30px
+        height 30px
+        text-align center
+        border 1px solid $text-muted
+        &:hover
+          border 1px solid $accent-color
+  .footer-nav
+    margin-top 60px
+    width 160px
+    +media($screen-xs-min)
+      make-md-column(12)
+    .md-title
+      font-family $RWBold
+    ul
+      margin 0
+      padding 20px 0 0 0
+    li
+      padding 5px 0
+      border-bottom 1px solid $dark-grey
+      &:last-child
+        border-bottom none
+    a
+      color $text-muted
+      transition color 0.2s ease
+      &:hover
+        color $accent-color
+      i
+        padding-right 20px
+        color $accent-color
+
+  .footer-contact
+    margin-top 60px
+    cols(4, 4, 4, 12)
+    .md-title
+      font-family $RWBold
+    form
+      margin-top 35px
+      input
+        color $text-muted
+        text-indent 10px
+        background-color transparent
+        border 1px solid $text-muted
+        +placeholder()
+          color $text-muted
+      .input-name
+        border-right none
+      .input-name
+      .input-email
+        padding 5px 0 5px 0
+      .input-comment
+        padding 10px 0 80px 0
+        border-top none
+      .btn-orange
+        square-button(10px 25px, $accent-color, $text-muted)
+      .input-name
+      .input-email
+        cols(6, 6, 6, 6)
+      .input-comment
+        cols(12, 12, 12, 12)

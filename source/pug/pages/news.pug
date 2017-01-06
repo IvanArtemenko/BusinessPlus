@@ -1,0 +1,96 @@
+html
+  include ../partials/head
+    title News
+  body
+    header.main-header
+      .mask
+        img.banner-img(src='source/static/img/news-banner.png', alt='banner-image') 
+      include ../partials/header
+
+    .main-content
+      .container
+        .row-fluid
+          .page-name
+            p.xl-title.text-uppercase News
+            p.sub-title Featured news
+      .news-post
+        .container
+          .row-fluid
+            .ribbon
+              | October 20-05
+            .news-content
+              .news-img
+                img(src='source/static/img/news-img.png', alt='img')
+              .news-text
+                p.text-justify
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  | Accusamus nisi, consequuntur deserunt architecto tenetur molestias aperiam quo.
+                  | Neque, aliquid. Laudantium qui, consequuntur est.
+                  | Eos quaerat reiciendis nemo, animi corrupti saepe.
+                ul.check-list
+                  li Nam nec urna facilisis, viverra arcu id, aliquam nulla.
+                  li Donec ac risus molestie, porta elit vel, hendrerit orci.
+                  li Aenean in sapien sed mauris tincidunt posuere.
+      .news-post.grey-section.pt-100
+        .container
+          .row-fluid
+            .ribbon
+              | October 22-05
+            .news-content
+              .news-text
+                p.md-title.text-uppercase News heading here
+                p.text-justify
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  | Accusamus nisi, consequuntur deserunt architecto tenetur molestias aperiam quo.
+                  | Neque, aliquid. Laudantium qui, consequuntur est.
+                  | Eos quaerat reiciendis nemo, animi corrupti saepe.
+                  | Eos quaerat reiciendis nemo.
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  | Lorem ipsum dolor sit amet, nemo reiciendis.
+      .news-post.pt-100
+        .container
+          .row-fluid
+            .ribbon
+              | October 24-05
+            .news-content
+              .news-img
+                img(src='source/static/img/news-img-2.png', alt='img')
+                ul.sub-images.list-inline
+                  li
+                    img(src='source/static/img/sub-image-1.png', alt='img')
+                  li
+                    img(src='source/static/img/sub-image-2.png', alt='img')
+              .news-text
+                p.md-title.text-uppercase News heading here
+                p.text-justify
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  | Accusamus nisi, consequuntur deserunt architecto tenetur molestias aperiam quo.
+                  | Neque, aliquid. Laudantium qui, consequuntur est.
+                  | Eos quaerat reiciendis nemo, animi corrupti saepe.
+                  | Eos quaerat reiciendis nemo.
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  | Lorem ipsum dolor sit amet, nemo reiciendis.
+                blockquote.blockquote-blue
+                  | Normal distribution of letters, as opposed to using 'Content here,
+                  | content here', making it look like readable English.
+                  | Many desktop publishing packages
+      .news-post.grey-section.pt-100
+        .container
+          .row-fluid
+            .ribbon
+              | October 22-05
+            .news-content
+              .news-img
+                img(src='source/static/img/news-img-3.png', alt='img')
+              .news-text
+                p.md-title.text-uppercase News heading here
+                p.text-justify
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  | Accusamus nisi, consequuntur deserunt architecto tenetur molestias aperiam quo.
+                  | Neque, aliquid. Laudantium qui, consequuntur est.
+                  | Eos quaerat reiciendis nemo, animi corrupti saepe.
+                  | Eos quaerat reiciendis nemo.
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  | Lorem ipsum dolor sit amet, nemo reiciendis.
+
+    include ../partials/footer

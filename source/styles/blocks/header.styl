@@ -1,0 +1,43 @@
+.main-header
+  position relative
+  height 395px
+
+.inner-header
+  position relative
+  border-bottom: 1px solid alpha($light-grey, 0.3)
+  .header-logo
+    width 165px
+    margin 25px 0 35px 0
+    +media($screen-sm-max)
+      margin 25px 0 35px 10px
+  .header-phone
+    +media($screen-xs-min)
+      display none
+    margin 38px 0 0 25px
+  .header-nav
+    +media($screen-sm-max)
+      display none
+    ul
+      margin-top 38px
+      li
+        margin-left 20px
+        +media($screen-md-max)
+          margin-left 10px
+        a
+          color white
+          font-family $OpenSansSB
+          transition color 0.2s ease
+          &:hover
+            color $accent-color
+  .btn-burger
+    display none
+    margin 30px 10px 0 0
+    +media($screen-sm-max)
+      display block
+
+.banner-phone
+  margin-top 50px
+  text-align center
+  display none
+  +media($screen-xs-min)
+    display block

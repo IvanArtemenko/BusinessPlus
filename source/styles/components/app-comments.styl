@@ -1,0 +1,48 @@
+.post-comment
+  width 100%
+
+
+.comment-reply
+  cols(11, 11, 10, 12)
+  @extend .pull-right
+  +media($screen-xs-max)
+    margin 0 0 30px 0 !important
+    padding 0 0 30px 0 !important
+
+.post-comment
+.comment-reply
+  float left
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $light-grey;
+  .user-avatar
+    cols(1, 1, 2, 12)
+  .comment-heading
+  .comment-body
+    cols(11, 11, 10, 12)
+  .comment-heading
+    +media($screen-xs-max)
+      margin-top 20px
+    a
+      padding-left 15px
+      +media($screen-xs-max)
+        padding-left 0
+  .comment-body
+    p
+      padding 10px 0 0 15px
+      +media($screen-xs-max)
+        padding 10px 0 0 0
+    .btn-comment
+      margin 10px 0 0 15px
+      square-button(5px 8px, $accent-color, $dark-color)
+      border-radius: 50% !important
+      +media($screen-xs-max)
+        margin 10px 0 0 0
+
+.comment-reply
+  .comment-body
+    a
+      padding-left 15px
+      +media($screen-xs-max)
+        padding-left 0
+  border-bottom 0

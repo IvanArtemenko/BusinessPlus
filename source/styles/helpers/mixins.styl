@@ -1,0 +1,109 @@
+centralizer($horizontal = true, $vertical = true)
+  position absolute
+  if ($horizontal and $vertical)
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+  else if ($horizontal)
+    left 50%
+    transform translate(-50%, 0)
+  else if ($vertical)
+    top 50%
+    transform translate(0, -50%)
+
+my-opacity($opacity)
+  opacity: $opacity
+  filter opacity($opacity)
+
+media($width)
+  @media screen and (max-width: $width)
+    {block}
+
+placeholder()
+  &::-webkit-input-placeholder
+    {block}
+  &:-moz-placeholder
+    {block}
+  &::-moz-placeholder
+    {block}
+  &:-ms-input-placeholder
+    {block}
+
+active-button($color)
+  color $color !important
+  border-color $color !important
+  &:hover
+  &:active
+  &:focus
+  &:visited
+    color $color !important
+    border-color $color !important
+
+
+square-button($padding, $color, $hover-color)
+  padding $padding
+  color $color
+  outline 0
+  box-shadow none
+  background-color transparent
+  border-radius 0
+  border 2px solid $color
+  transition 0.2s ease
+  &:active
+    box-shadow none
+  &:hover
+    color $hover-color !important
+    border 2px solid $hover-color
+  &:visited
+  &:focus
+    color $color
+
+rounded-button($width, $height, $padding, $color, $bg-color, $hover-bg)
+  width $width
+  height $height
+  padding $padding
+  color $color
+  text-align center
+  border-radius 50% !important
+  background-color $bg-color
+  transition 0.2s ease
+  &:active
+    box-shadow none
+  &:hover
+    color $color !important
+    background-color $hover-bg
+  &:visited
+  &:focus
+    color $color
+  & + button
+    outline 0
+    padding 0
+
+cols($lg, $md, $sm, $xs)
+  make-xs-column($xs)
+  make-sm-column($sm)
+  make-md-column($md)
+  make-lg-column($lg)
+
+color-fill($background-color, $text-color)
+  background-color $background-color
+  color $text-color
+  border none
+  &:hover
+    background-color darken($background-color, 10%)
+    border none
+  &:visited
+  &:focus
+    color $text-color
+
+quote($color)
+  position relative
+  &::after
+    content '\275D'
+    position absolute
+    display block
+    top -110px
+    left 0
+    z-index -10
+    color alpha($color, 15%)
+    font-size 20rem

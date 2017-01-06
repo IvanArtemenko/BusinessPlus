@@ -1,0 +1,189 @@
+html
+  include ../partials/head
+    title Services
+  body
+    header.main-header
+      .mask
+        img.banner-img(src='source/static/img/banner-services.png', alt='banner-image') 
+      include ../partials/header
+
+    .main-content
+      .container
+        .row-fluid
+          .page-name
+            p.xl-title.text-uppercase Service
+            p.sub-title Our Products
+      .service
+        .container
+          .row
+            .service-img
+              img(src='source/static/img/service-boosting.png', alt='image')
+            .service-desc
+              p.sm-title.text-uppercase Boosting your business
+              p.text-justify
+                | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                | It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum.
+              a.btn.btn-orange.text-uppercase.btn-xs.mt-3(href='contact.html') contact us
+      .service.grey-section.service-right.triangles-right
+        .container
+          .row
+            .service-img
+              img(src='source/static/img/service-support.png', alt='image')
+            .service-desc
+              p.sm-title.text-uppercase Online support
+              p.text-justify
+                | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                | It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum.
+              a.btn.btn-orange.text-uppercase.btn-xs.mt-3(href='contact.html') contact us
+      .service
+        .container
+          .row
+            .service-img
+              img(src='source/static/img/service-analyzing.png', alt='image')
+            .service-desc
+              p.sm-title.text-uppercase analyzing business strategy
+              p.text-justify
+                | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                | It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum.
+              a.btn.btn-orange.text-uppercase.btn-xs.mt-3(href='contact.html') contact us
+      .service.grey-section.service-right
+        .container
+          .row
+            .service-img
+              img(src='source/static/img/service-time.png', alt='image')
+            .service-desc
+              p.sm-title.text-uppercase Time managment
+              p.text-justify
+                | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                | It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum.
+              a.btn.btn-orange.text-uppercase.btn-xs.mt-3(href='contact.html') contact us
+      .clients-feedback.pb-100
+        .container
+          .row-fluid
+            .page-name
+              p.xl-title.text-uppercase Clients
+              p.sub-title Whats our client says
+          .row
+            #carousel-feedback.carousel.slide(data-ride='carousel')
+              .carousel-inner(role='listbox')
+                .item.active
+                  .feedback-item
+                    .feedback-text.quotes-dark
+                      p.text-justify
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
+                    .client-info
+                      a.user-avatar.pull-left(href='#')
+                        img(src='source/static/img/avatar-4.png', alt='')
+                      .client-name.pull-left
+                        p.sm-title.text-uppercase Krishnan Unni
+                        p.text-justify Designation
+                  .feedback-item
+                    .feedback-text.quotes-blue
+                      p.text-justify
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
+                    .client-info
+                      a.user-avatar.pull-left(href='#')
+                        img(src='source/static/img/avatar-5.png', alt='')
+                      .client-name.pull-left
+                        p.sm-title.text-uppercase Mariya Jeorge
+                        p.text-justify Designation
+                  .feedback-item
+                    .feedback-text.quotes-orange
+                      p.text-justify
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
+                    .client-info
+                      a.user-avatar.pull-left(href='#')
+                        img(src='source/static/img/avatar-6.png', alt='')
+                      .client-name.pull-left
+                        p.sm-title.text-uppercase Akhil Designer
+                        p.text-justify Designation
+                .item
+                  .feedback-item
+                    .feedback-text.quotes-dark
+                      p.text-justify
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
+                    .client-info
+                      a.user-avatar.pull-left(href='#')
+                        img(src='source/static/img/avatar-4.png', alt='')
+                      .client-name.pull-left
+                        p.sm-title.text-uppercase Krishnan Unni
+                        p.text-justify Designation
+                  .feedback-item
+                    .feedback-text.quotes-blue
+                      p.text-justify
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
+                    .client-info
+                      a.user-avatar.pull-left(href='#')
+                        img(src='source/static/img/avatar-5.png', alt='')
+                      .client-name.pull-left
+                        p.sm-title.text-uppercase Mariya Jeorge
+                        p.text-justify Designation
+                  .feedback-item
+                    .feedback-text.quotes-orange
+                      p.text-justify
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
+                    .client-info
+                      a.user-avatar.pull-left(href='#')
+                        img(src='source/static/img/avatar-6.png', alt='')
+                      .client-name.pull-left
+                        p.sm-title.text-uppercase Akhil Designer
+                        p.text-justify Designation
+                .item
+                  .feedback-item
+                    .feedback-text.quotes-dark
+                      p.text-justify
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
+                    .client-info
+                      a.user-avatar.pull-left(href='#')
+                        img(src='source/static/img/avatar-4.png', alt='')
+                      .client-name.pull-left
+                        p.sm-title.text-uppercase Krishnan Unni
+                        p.text-justify Designation
+                  .feedback-item
+                    .feedback-text.quotes-blue
+                      p.text-justify
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
+                    .client-info
+                      a.user-avatar.pull-left(href='#')
+                        img(src='source/static/img/avatar-5.png', alt='')
+                      .client-name.pull-left
+                        p.sm-title.text-uppercase Mariya Jeorge
+                        p.text-justify Designation
+                  .feedback-item
+                    .feedback-text.quotes-orange
+                      p.text-justify
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
+                    .client-info
+                      a.user-avatar.pull-left(href='#')
+                        img(src='source/static/img/avatar-6.png', alt='')
+                      .client-name.pull-left
+                        p.sm-title.text-uppercase Akhil Designer
+                        p.text-justify Designation
+              ul.carousel-indicators.mt-3.list-inline
+                li.rounded-indicator.active(data-target='#carousel-feedback', data-slide-to='0')
+                li.rounded-indicator(data-target='#carousel-feedback', data-slide-to='1')
+                li.rounded-indicator(data-target='#carousel-feedback', data-slide-to='2')
+
+    include ../partials/footer
+    include ../partials/scripts

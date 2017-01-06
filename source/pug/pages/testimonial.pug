@@ -1,0 +1,89 @@
+html
+  include ../partials/head
+    title Testimonial
+  body
+    header.main-header
+      .mask
+        img.banner-img(src='source/static/img/testimonial-banner.png', alt='banner-image') 
+      include ../partials/header
+
+    .main-content
+      .container
+        .row-fluid
+          .page-name
+            p.xl-title.text-uppercase Testimonials
+            p.sub-title Our happy clients
+      .testimonial-post
+        .container
+          .row-fluid
+            .testimonial-img
+              img(src='source/static/img/testimonial-1.png', alt='img')
+            .testimonial-message
+              p.text-justify.text-quote
+                | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                | galley of type and scrambled it to make a type specimen book. It has survived
+                | when an unknown printer took
+                | galley of type and scrambled it to make a type specimen book. It has survived
+              p.sm-title.text-uppercase Name here
+              p.text-orange Designation
+      .testimonial-post.grey-section.pt-100.triangles-right
+        .container
+          .row-fluid
+            .testimonial-img
+              img(src='source/static/img/testimonial-2.png', alt='img')
+            .testimonial-message
+              p.text-justify.text-quote
+                | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                | galley of type and scrambled it to make a type specimen book. It has survived
+                | when an unknown printer took
+                | galley of type and scrambled it to make a type specimen book. It has survived
+              p.sm-title.text-uppercase Name here
+              p.text-orange Designation
+      .testimonial-post.pt-100
+        .container
+          .row-fluid
+            .testimonial-img
+              img(src='source/static/img/testimonial-3.png', alt='img')
+            .testimonial-message
+              p.text-justify.text-quote
+                | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                | galley of type and scrambled it to make a type specimen book. It has survived
+                | when an unknown printer took
+                | galley of type and scrambled it to make a type specimen book. It has survived
+              p.sm-title.text-uppercase Name here
+              p.text-orange Designation
+      .testimonial-post.grey-section.pt-100
+        .container
+          .row-fluid
+            .testimonial-img
+              img(src='source/static/img/testimonial-4.png', alt='img')
+            .testimonial-message
+              p.text-justify.text-quote
+                | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                | galley of type and scrambled it to make a type specimen book. It has survived
+                | when an unknown printer took
+                | galley of type and scrambled it to make a type specimen book. It has survived
+              p.sm-title.text-uppercase Name here
+              p.text-orange Designation
+      .testimonial-comments.pb-100
+        .container
+          .row-fluid
+            .page-name
+              p.xl-title.text-uppercase Post comments
+              p.sub-title Post Your testimonial now
+          .row
+            form(action='', method='')
+              .col-md-6
+                input.input-block-border(type='text', placeholder='Name', name='name')
+                input.input-block-border(type='email', placeholder='Email', name='email')
+                input.input-block-border(type='text', placeholder='Phone', name='phone')
+              .col-md-6
+                textarea.input-block-border(name='comment', placeholder='Comment')
+                button.btn.btn-orange.mt-2.text-uppercase(type='submit') Submit now
+
+    include ../partials/footer
+    include ../partials/scripts

@@ -1,0 +1,29 @@
+.ribbon
+  position relative
+  float left
+  padding 12px 0 0 5px
+  width 150px
+  height 42px
+  background-color $accent-color
+  font-family $OpenSansB
+  text-transform uppercase
+  &::after 
+    content ''
+    position absolute
+    top 0
+    right -42px
+    width 0
+    height 0
+    border-style solid
+    border-width 42px 42px 0 0
+    border-color $accent-color transparent transparent 
+  &::before
+    content ''
+    position absolute
+    top 0
+    right -42px
+    width 0
+    height 0
+    border-style solid
+    border-width 42px 0 0 42px
+    border-color transparent transparent transparent $accent-color

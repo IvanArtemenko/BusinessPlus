@@ -1,0 +1,55 @@
+.about-buttons
+  centralizer(true, true)
+  a
+    margin 10px
+    square-button(15px 30px, $accent-color, white)
+
+.about-buttons-xs
+  a
+    margin-right 15px
+    +media($screen-xs-min)
+      margin-right 0
+
+.our-mission
+.our-vision
+  .mission-img
+  .vision-img
+    cols(3, 4, 5, 12)
+  .mission-desc
+  .vision-desc
+    cols(9, 8, 7, 12)
+
+.our-vision
+  margin-top 30px
+
+.mission-desc
+.vision-desc
+  +media($screen-xs-max)
+    padding-top 10px
+
+.vision-desc
+  text-align right
+  +media($screen-xs-max)
+    text-align left
+
+.our-clients
+  position relative
+  padding-bottom 100px
+
+
+.client-list
+  overflow hidden
+  margin 1px
+  border-top 1px solid $light-grey
+  border-right 1px solid $light-grey
+  li
+    height 160px
+    border-left 1px solid $light-grey
+    border-bottom 1px solid $light-grey
+    text-align center
+    cols(2, 2, 3, 12)
+    &::before
+      content ""
+      display inline-block
+      height 100%
+      vertical-align middle

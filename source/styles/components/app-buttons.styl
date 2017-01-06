@@ -1,0 +1,78 @@
+.btn-phone
+  position relative
+  margin 0
+  $phone-color = white
+  color $phone-color
+  font-family $OpenSansSB
+  &:focus
+  &:link
+  &:visited
+    color $phone-color
+    text-decoration none
+  &::before
+    content ''
+    position relative
+    padding-left 60px
+    padding-top 1px
+    height 23px
+    width 23px
+    vertical-align middle
+    background url('../../static/img/phone-icon.png') no-repeat center
+  &.border
+    &::before
+      border-left 1px solid alpha($light-grey, 0.4)
+  &.no-padding
+    &::before
+      padding-left 30px !important
+
+
+.active-orange
+  active-button($accent-color)
+
+.active-white
+  active-button(white)
+
+.active-black
+  active-button(black)
+
+.btn-burger
+  square-button(5px 10px, white, $accent-color)
+  font-size 16px
+
+.btn-mail
+  square-button(7px 14px, $accent-color, $dark-color)
+  font-size 16px
+  color black
+  &:link
+    color black
+
+.btn-twitter
+  rounded-button(51px, 51px, 10px, white, $social-twitter, darken($social-twitter, 10%))
+
+.btn-facebook
+  rounded-button(51px, 51px, 10px, white, $social-facebook, darken($social-facebook, 10%))
+
+.btn-google-plus
+  rounded-button(51px, 51px, 10px, white, $social-google-plus, darken($social-google-plus, 10%))
+
+.btn-twitter
+.btn-facebook
+.btn-google-plus
+  font-size 20px
+  +media($screen-xs-max)
+    width 32px
+    height 32px
+    padding (10px / 3.3)
+    font-size 18px
+
+.btn-orange
+  square-button(15px 30px, $accent-color, $dark-color)
+  font 16px $RWExtraBold
+
+.orange-fill
+  color-fill($accent-color, $dark-color)
+
+.btn-xs
+  +media($screen-xs-min)
+    width 100%
+    padding (15px/2 30px/2)

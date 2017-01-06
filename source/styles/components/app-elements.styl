@@ -1,0 +1,133 @@
+.mt-1
+  margin-top 1rem
+
+.mt-2
+  margin-top 1.5rem
+
+.mt-3
+  margin-top 3rem
+
+.ml-1
+  margin-left 1rem
+
+.ml-2
+  margin-left 1.5rem
+
+.ml-3
+  margin-left 3rem
+
+.mr-1
+  margin-right 1rem
+
+.mr-2
+  margin-right 1.5rem
+
+.mr-3
+  margin-right 3rem
+
+.pt-100
+  padding-top 100px
+
+.pb-100
+  padding-bottom 100px
+
+.paginator
+  margin-bottom 100px
+  text-align center
+  cols(12, 12, 12, 12)
+  li
+    padding 0
+    a
+      font 16px $RWExtraBold
+      square-button(7px 15px, $dark-color, $accent-color)
+
+
+
+.triangles-left
+  &::after
+    position absolute
+    content ''
+    width 0
+    height 0
+    top -50px
+    left 160px
+    border-left 50px solid transparent
+    border-right 50px solid transparent
+    border-bottom 50px solid $accent-color
+  &::before
+    position absolute
+    content ''
+    width 0
+    height 0
+    top -70px
+    left 100px
+    border-left 60px solid transparent
+    border-right 60px solid transparent
+    border-bottom 70px solid $blue-color
+
+.triangles-right
+  &::after
+    position absolute
+    content ''
+    width 0
+    height 0
+    top -50px
+    right 100px
+    border-left 50px solid transparent
+    border-right 50px solid transparent
+    border-bottom 50px solid $accent-color
+  &::before
+    position absolute
+    content ''
+    width 0
+    height 0
+    top -70px
+    right 150px
+    border-left 60px solid transparent
+    border-right 60px solid transparent
+    border-bottom 70px solid $blue-color
+
+
+.frame-container
+  overflow hidden
+  height 395px
+
+.frame-responsive
+  width 100%
+  height 100%
+
+.grey-section
+  position relative
+  margin-top 100px
+  padding-bottom 100px
+  background-color $light-grey
+
+.check-list
+  margin 0
+  padding 0
+  list-style-type none
+  li
+    font-family $OpenSansB
+    padding 0
+    &::before
+      font-family 'FontAwesome'
+      content "\f00c"
+      margin 0 5px 0 0
+      color $dark-color
+
+.btn-arrow::after
+  font-family "FontAwesome"
+  content "\f063"
+
+.btn-arrow.collapsed::after
+  font-family "FontAwesome"
+  content "\f061"
+
+.sub-images
+  margin 10px 0 0 0
+  float left
+  list-style-type none
+  li 
+    cols(6, 6, 6, 6)
+    padding-left 2px
+    padding-right 2px

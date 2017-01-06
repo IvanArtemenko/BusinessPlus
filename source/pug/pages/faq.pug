@@ -1,0 +1,71 @@
+html
+  include ../partials/head
+    title FAQ
+  body
+    header.main-header
+      .mask
+        img.banner-img(src='source/static/img/banner-faq.png', alt='banner-image') 
+      include ../partials/header
+
+    .main-content
+      .container
+        .row-fluid
+          .page-name
+            p.xl-title.text-uppercase FAQ's
+            p.sub-title  Frequently asked questions
+        .row-fluid
+          .faq-list
+            ol
+              li
+                p.md-title.text-uppercase Fun environment?
+                p.text-justify
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              li
+                p.md-title.text-uppercase Fun environment?
+                p.text-justify
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              li
+                p.md-title.text-uppercase Fun environment?
+                p.text-justify
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              li
+                p.md-title.text-uppercase Fun environment?
+                p.text-justify
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              li
+                p.md-title.text-uppercase Fun environment?
+                p.text-justify
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              li
+                p.md-title.text-uppercase Fun environment?
+                p.text-justify
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      .search-questions.grey-section
+        .container
+          .row-fluid
+            .page-name.text-center
+              p.xl-title.text-uppercase Search questions
+              p.sub-title If you have any more questions search here OR feel free to contact us
+          .row
+            form.col-md-12.text-center(action='')
+              .input-group
+                input.form-control(placeholder='Enter your questions here', type='text')
+                span.input-group-btn
+                  button.btn.btn-orange.btn-secondary(type='submit')
+                    i.fa.fa-search(aria-hidden='true')
+              div
+                a.btn.btn-orange.mt-3.text-uppercase(href='#') Contact us
+
+    include ../partials/footer

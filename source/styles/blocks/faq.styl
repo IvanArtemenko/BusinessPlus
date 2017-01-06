@@ -1,0 +1,55 @@
+.faq-list
+  margin-bottom 30px
+  ol
+    counter-reset item
+    list-style-type none
+    color $dark-color
+    & > li::before
+      content ''
+      position absolute
+      height 30px
+      width 31px
+      left -40px
+      top -3px
+      text-align center
+      padding-top 5px
+      vertical-align middle
+      content counter(item)''
+      counter-increment item
+      background url('../../static/img/yellow-shape.png') no-repeat center center
+    li
+      position relative
+      float left
+      width 47%
+      margin 50px 0 0 60px
+      &:nth-child(odd)
+        margin: 50px 0 0 0
+      +media($screen-lg-min)
+        width 47%
+        margin 50px 0 0 40px
+      +media($screen-xs-max)
+        width 100%
+        margin 50px 0 0 0
+
+.search-questions
+  .input-group
+    display inline-table
+    width 60%
+    +media($screen-sm-max)
+      width 70%
+    +media($screen-xs-max)
+      width 100%
+  .btn-secondary
+    padding (15px/4 15px)
+    height 40px
+    transition none
+    color $dark-color
+    background-color $accent-color
+  input
+    height 40px
+    border none
+    border-radius 0
+    box-shadow none
+    &:focus
+      outline none
+      box-shadow none

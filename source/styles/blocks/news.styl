@@ -1,0 +1,21 @@
+.news-content
+  float right !important
+  cols(9, 9, 12, 12)
+  +media($screen-sm-max)
+    float left
+    margin-top 25px
+    padding 0
+  .news-img
+    cols(5, 5, 12, 12)
+    img
+      @extend .img-responsive
+  .news-text
+    +media($screen-sm-max)
+      margin-top 15px
+  .news-img
+  .news-text
+    +media($screen-sm-max)
+      padding 0 !important
+
+.news-img ~ .news-text
+  cols(7, 7, 12, 12)

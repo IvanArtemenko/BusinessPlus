@@ -1,0 +1,47 @@
+.testimonial-post
+  position relative
+
+.testimonial-img
+  position relative
+  height 350px
+  padding 0 !important
+  cols(6, 6, 6, 6)
+  img
+    @extend .img-responsive
+  +media($screen-md-min)
+    cols(12, 12, 12, 12)
+  +media($screen-xs-min)
+    height auto
+
+.testimonial-message
+  cols(6, 6, 6, 6)
+  position absolute
+  left 520px
+  border 1px solid #eaeff3
+  background-color #fff
+  p.text-quote
+    padding-top 20px
+  p
+    padding 0 20px 0 20px
+  +media(1310px)
+    left 450px
+  +media($screen-md-min)
+    position relative
+    top 0 !important
+    margin 25px 0 0 0
+    left 0
+    cols(12, 12, 12, 12)
+  +media($screen-xs-min)
+    p 
+      padding 0 5px 0 5px
+
+    
+    
+.testimonial-comments
+  .input-block-border[name="email"]
+  .input-block-border[name="phone"]
+    margin-top 15px
+  .input-block-border[name="comment"]
+    height (42px * 3 + 30)
+    +media($screen-xs-min)
+      margin-top 15px

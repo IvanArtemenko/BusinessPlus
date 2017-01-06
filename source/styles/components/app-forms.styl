@@ -1,0 +1,42 @@
+.input-block
+  padding 35px 0 5px 0
+  width 100%
+  background-color transparent
+  outline none
+  border none
+  border-bottom 1px solid $medium-grey
+  resize none
+  transition 0.2s ease
+  +placeholder()
+    color $dark-grey
+    text-transform uppercase
+    font 14px $OpenSansSB
+  &:focus
+    outline none
+    border-bottom 1px solid $accent-color
+  &:invalid
+    outline none
+    box-shadow none
+    border-bottom 1px solid red
+  & + select
+    text-indent -2px
+    color rgba(#333, 0.6)
+    text-transform uppercase
+    appearance none
+    background url('../../static/img/dropdown-icon.png') no-repeat right 44px
+    font 14px $OpenSansSB
+    transition none
+    &:-moz-focusring
+      color transparent
+      text-shadow 0 0 0 rgba(#333, 0.6)
+
+.input-block-border
+  @extend .input-block
+  padding 10px
+  border 1px solid #eaeff3
+  &:focus
+    outline none
+    border-bottom 1px solid #eaeff3
+  &:invalid
+    outline none
+    box-shadow none
