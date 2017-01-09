@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(function ($) {
     var $testimonialImg = $(".testimonial-img");
     var $testimonialMessage = $(".testimonial-message");
     var testimonialImgHeight = $testimonialImg.height();
