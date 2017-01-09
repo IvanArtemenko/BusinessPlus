@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(function ($) {
     var $testimonialImg = $(".testimonial-img");
     var $testimonialMessage = $(".testimonial-message");
     var testimonialImgHeight = $testimonialImg.height();
@@ -10,11 +10,11 @@ $(document).ready(function() {
 
         if(thisParent.hasClass("pt-100")) {
             $(this).css({
-            "top": findHeight / 2 + 100 + "px"
+                "top": findHeight / 2 + 100 + "px"
             });
         } else {
             $testimonialMessage.css({
-            "top": findHeight / 2 + "px"
+                "top": findHeight / 2 + "px"
             });
         }
     });
